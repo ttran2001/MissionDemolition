@@ -35,11 +35,11 @@ public class Slingshot : MonoBehaviour
         launchPos = launchPointTrans.position;
     }
     void OnMouseEnter(){
-        print("Slingshot:OnMouseEnter()");
+        launchPoint.SetActive(true);
     }
 
     void OnMouseExit(){
-        print("Slingshot:OnMouseExit()");
+        launchPoint.SetActive(false);
     }
 
     void OnMouseDown(){
